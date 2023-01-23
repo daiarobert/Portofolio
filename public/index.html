@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://use.typekit.net/soy1dbs.css" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N5MST5X");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      //DO NOT DELETE
+      //this function allows tracking with UTM
+      //DO NOT DELETE
+
+      var urlLookupCounter = 0;
+
+      var urlLookup = function () {
+        urlLookupCounter++;
+
+        var urlParams = new URLSearchParams(window.location.search);
+
+        var utm_source = urlParams.get("utm_source");
+        var utm_medium = urlParams.get("utm_medium");
+        var utm_campaign = urlParams.get("utm_campaign");
+        var utm_term = urlParams.get("utm_term");
+        var utm_content = urlParams.get("utm_content");
+
+        var csWidget = $(document).find(".cswidget").length;
+
+        if (csWidget != 0) {
+          var e = $(document).find(".cswidget");
+          e.attr("data-csi_utm_medium", utm_medium);
+          e.attr("data-csi_utm_source", utm_source);
+          e.attr("data-csi_utm_campaign", utm_campaign);
+          e.attr("data-csi_utm_content", utm_content);
+        } else {
+          setTimeout(function () {
+            if (urlLookupCounter < 10) {
+              urlLookup();
+              console.log("Searching for url params...");
+            } else {
+              console.log("No elements with class cswidget were found.");
+            }
+          }, 1000);
+        }
+      };
+
+      urlLookup();
+
+      //DO NOT DELETE
+      //this function allows tracking with UTM
+      //DO NOT DELETE
+    </script>
+  </body>
+</html>

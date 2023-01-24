@@ -96,6 +96,7 @@ $(document).ready(function () {
   padding-left: 3em;
   padding-right: 3em;
   border-radius: 25px;
+  margin-top: -15px;
 }
 .navbar-nav {
   margin-left: auto;
@@ -127,6 +128,7 @@ $(document).ready(function () {
   .navbar {
     padding-left: 1em;
     padding-right: 1em;
+    margin-top: -15px;
   }
 }
 @keyframes pulse_v2 {

@@ -406,7 +406,8 @@ a {
 }
 .card-2,
 .card-4,
-.card-6 {
+.card-6,
+.card-8 {
   padding-right: 0;
   padding-left: 0;
 }
@@ -472,7 +473,8 @@ a {
 @media screen and(max-width: 767px) {
   .card-1,
   .card-3,
-  .card-5 {
+  .card-5,
+  .card-7 {
     padding: 0 !important;
   }
   .card-3 {

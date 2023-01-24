@@ -267,7 +267,8 @@ $(document).ready(function () {
   }
 }
 .arrow {
-  max-width: 10px;
+  max-width: 15px;
+  margin-top: -3px;
 }
 .carousel__img--product {
   margin-top: 40px;

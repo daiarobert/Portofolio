@@ -15,22 +15,34 @@
       >
         Feel free to reach out for collaborations or just a friendly hello
       </div>
-      <div
-        class="email"
-        style="
-          font-family: inconsolata, sans-serif;
-          text-transform: none;
-          font-size: 24px;
-          color: #13b1dd;
-        "
+      <a href="mailto: daiarobert2@gmail.com"
+        ><div
+          class="email"
+          style="
+            font-family: inconsolata, sans-serif;
+            text-transform: none;
+            font-size: 24px;
+            color: #13b1dd;
+          "
+        >
+          daiarobert2@gmail.com
+        </div></a
       >
-        daiarobert2@gmail.com
-      </div>
       <div class="contact-me" style="margin-top: auto">
-        <button class="btn btn-outline-light">contact me</button>
-        <img class="icon icon-1" src="/products/linkedin-icon.png" />
-        <img class="icon icon-2" src="/products/email-icon.png" />
-        <img class="icon icon-3" src="/products/phone-icon.png" />
+        <a href="mailto: daiarobert2@gmail.com"
+          ><button class="btn btn-outline-light">contact me</button></a
+        >
+        <a
+          href="https://www.linkedin.com/in/robert-daia-5b8954223/"
+          target="_blank"
+          ><img class="icon icon-1" src="/products/linkedin-icon.png"
+        /></a>
+        <a href="mailto: daiarobert2@gmail.com"
+          ><img class="icon icon-2" src="/products/email-icon.png"
+        /></a>
+        <a href="mailto: daiarobert2@gmail.com"
+          ><img class="icon icon-3" src="/products/phone-icon.png"
+        /></a>
       </div>
     </div>
   </div>
@@ -86,6 +98,9 @@ $(document).ready(function () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+a {
+  text-decoration: none;
+}
 .intro {
   max-width: 1200px;
   margin-left: auto;
@@ -101,14 +116,13 @@ $(document).ready(function () {
   margin-top: 10px;
 }
 .left {
-  width: 100%;
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     49deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(184, 184, 184, 0.9626444327731093) 75%
+    rgba(110, 110, 110, 0.963) 75%
   );
-  background-size: 350%;
+  background-size: 250%;
+  border: none;
   color: #ffffff;
   margin-right: 10px;
 }

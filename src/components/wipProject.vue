@@ -28,34 +28,39 @@
           Login Authentication using protected routes and JWT token.<br />
         </div>
         <div class="buttons--wrapper" style="margin-bottom: 20px">
-          <button
-            type="button"
-            class="carousel__button-live btn btn-outline-light active"
-            data-action="csWidgetOpen"
-            style="
-              border: solid 1px;
-              padding: 10px;
-              border-radius: 25px;
-              margin-right: 10px;
-              font-family: inconsolata, sans-serif;
-            "
-            :data-id="active"
-            @click="openModal(active)"
-          >
-            View Live
-          </button>
-          <button
-            type="button"
-            class="carousel__button-code btn btn-outline-light"
-            style="
-              border: solid 1px;
-              padding: 10px;
-              border-radius: 25px;
-              font-family: inconsolata, sans-serif;
-            "
-          >
-            View Code
-          </button>
+          <a href="https://codecubes.co.uk/" target="_blank"
+            ><button
+              type="button"
+              class="carousel__button-live btn btn-outline-light active"
+              data-action="csWidgetOpen"
+              style="
+                border: solid 1px;
+                padding: 10px;
+                border-radius: 25px;
+                margin-right: 10px;
+                font-family: inconsolata, sans-serif;
+              "
+              :data-id="active"
+              @click="openModal(active)"
+            >
+              View Live
+            </button>
+          </a>
+
+          <a href="https://github.com/daiarobert/atipic" target="_blank"
+            ><button
+              type="button"
+              class="carousel__button-code btn btn-outline-light"
+              style="
+                border: solid 1px;
+                padding: 10px;
+                border-radius: 25px;
+                font-family: inconsolata, sans-serif;
+              "
+            >
+              View Code
+            </button>
+          </a>
         </div>
         <div class="trigger-buttons">
           <button
@@ -129,8 +134,6 @@ export default {
               that.active = "Atipic";
             } else if (dataId == 1) {
               that.active = "Atipic Login";
-            } else {
-              that.active = 3;
             }
           });
         }
@@ -170,10 +173,10 @@ export default {
         opacity: 0,
         y: 50,
       });
-      gsap.set(".carousel__img--product[data-id='1']", {
-        opacity: 0,
-        y: 50,
-      });
+      // gsap.set(".carousel__img--product[data-id='1']", {
+      //   opacity: 0,
+      //   y: 50,
+      // });
       gsap.to(".container-atipic", {
         // Animate .recipes__recipe
         // properties to animate here
@@ -186,18 +189,18 @@ export default {
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
-      gsap.to(".carousel__img--product[data-id='1']", {
-        // Animate .recipes__recipe
-        // properties to animate here
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".container-atipic", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
-          toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
-        },
-      });
+      // gsap.to(".carousel__img--product[data-id='1']", {
+      //   // Animate .recipes__recipe
+      //   // properties to animate here
+      //   y: 0,
+      //   opacity: 1,
+      //   duration: 1,
+      //   scrollTrigger: {
+      //     trigger: ".container-atipic", // what element the animation should start at
+      //     start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+      //     toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
+      //   },
+      // });
     },
   },
 
@@ -341,6 +344,7 @@ $(document).ready(function () {
   border-right-color: transparent;
   width: 30px;
   height: 35px;
+  background: transparent;
   color: white;
 }
 .next__btn {
@@ -350,6 +354,7 @@ $(document).ready(function () {
   margin-left: -1px;
   width: 30px;
   height: 35px;
+  background: transparent;
   color: white;
 }
 @media screen and (max-width: 767px) {

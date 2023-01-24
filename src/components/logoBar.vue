@@ -114,6 +114,7 @@ $(document).ready(function () {
   background-color: #13b1dd;
   margin-right: 10px;
   align-items: center;
+  animation: pulse_v2 2s infinite;
 }
 .collapse {
   list-style: none;
@@ -126,6 +127,14 @@ $(document).ready(function () {
   .navbar {
     padding-left: 1em;
     padding-right: 1em;
+  }
+}
+@keyframes pulse_v2 {
+  0% {
+    box-shadow: 0 0 0 0px #13b1dd3a;
+  }
+  100% {
+    box-shadow: 0 0 0 10px #13b1dd00;
   }
 }
 </style>

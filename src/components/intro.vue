@@ -9,7 +9,10 @@
           class="title"
           style="font-family: inconsolata, sans-serif; text-transform: none"
         >
-          Hello, I’m <span style="color: #13b1dd">ROB</span>ert,
+          Hello, I’m
+          <span style="color: #13b1dd; font-family: termina, sans-serif"
+            >ROB</span
+          >ert,
         </div>
         <div
           class="title"
@@ -30,15 +33,27 @@
           with new technologies and design trends.
         </div>
         <div class="contact-me" style="margin-top: auto">
-          <button class="btn btn-outline-light">contact me</button>
-          <img class="icon icon-1" src="/products/linkedin-icon.png" />
-          <img class="icon icon-2" src="/products/email-icon.png" />
-          <img class="icon icon-3" src="/products/phone-icon.png" />
+          <a href="mailto: daiarobert2@gmail.com"
+            ><button class="btn btn-outline-light">contact me</button></a
+          >
+          <a
+            href="https://www.linkedin.com/in/robert-daia-5b8954223/"
+            target="_blank"
+            ><img class="icon icon-1" src="/products/linkedin-icon.png"
+          /></a>
+          <a href="mailto: daiarobert2@gmail.com"
+            ><img class="icon icon-2" src="/products/email-icon.png"
+          /></a>
+          <a href="mailto: daiarobert2@gmail.com"
+            ><img class="icon icon-3" src="/products/phone-icon.png"
+          /></a>
         </div>
       </div>
     </div>
-    <div
+    <a
       class="right card card-github col-12 col-md-4"
+      href="https://github.com/daiarobert"
+      target="_blank"
       style="
         background-image: url('/products/github-test.png');
         background-position: center;
@@ -47,7 +62,7 @@
       "
     >
       <img class="click" src="/products/click-white.png" />
-    </div>
+    </a>
   </div>
 </template>
 <script>
@@ -103,14 +118,13 @@ $(document).ready(function () {
   color: #ffffff;
 }
 .left {
-  //   width: 65%;
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     49deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(184, 184, 184, 0.9626444327731093) 75%
+    rgba(110, 110, 110, 0.963) 75%
   );
-  background-size: 350%;
+  background-size: 250%;
+  border: none;
   //   padding-right: 20px;
   //   margin-right: 10px;
 }
@@ -134,7 +148,7 @@ $(document).ready(function () {
   border-radius: 25px;
 }
 .click {
-  max-width: 40px;
+  max-width: 30px;
   margin-left: auto;
   padding: 10;
   margin-top: 15px;
@@ -167,25 +181,28 @@ $(document).ready(function () {
   }
   .click {
     max-width: 30px;
-    right: 10px;
-    top: 10px;
+    right: 15px;
+    top: 15px;
   }
 }
-// @media screen and(max-width: 770px) {
-//   .left {
-//     width: 100% !important;
-//   }
+.click {
+  -webkit-animation: pulse 3s linear infinite;
+  animation: pulse 3s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-//   .right {
-//     width: 100% !important;
-//   }
-// }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 
-// .dot {
-//   border-radius: 50%;
-//   height: 15px;
-//   width: 15px;
-//   background-color: aqua;
-//   margin-right: 10px;
-// }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 </style>

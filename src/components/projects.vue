@@ -6,8 +6,10 @@
       :class="` col-md-6 card-${key}`"
       :data-id="`${key}`"
     >
-      <div
+      <a
         class="card"
+        :href="`${item.link}`"
+        target="_blank"
         :style="`background-image: url('/products/project-${key}.jpg'); background-size:120%`"
       >
         <div
@@ -21,7 +23,7 @@
           {{ item.title }} <img class="click" src="/products/click-white.png" />
         </div>
         <img :src="`${item.img}`" :class="`project--${key}`" />
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -290,38 +292,46 @@ var projects = {
     img: "/products/captain-morgan-mobile.png",
     color: "#203354",
     title: "Captain Morgan",
+    link: "https://oliver_digital.s3.amazonaws.com/channelsight/cs-cm-2022/index.html",
   },
   2: {
     img: "/products/baileys-desktop.png",
     color: "#152238",
     title: "Baileys",
+    link: "https://shoppable.channelsight.com/8db0d58a-6410-464b-b570-53b6ffcfce3a/baileys/page.html",
   },
   3: {
     img: "/products/roe-desktop.png",
     color: "#1c2e4a",
     title: "Roe & co",
+    link: "https://static.channelsight.com/roeandcoireland/index.html",
   },
   4: {
     img: "/products/johnnie-walker-mobile.png",
     color: "#23395d",
     title: "Johnnie Walker",
+    link: "https://static.channelsight.com/johnniewalker/index.html",
   },
   5: {
     img: "/products/gordons-mobile.png",
     color: "#192841",
     title: "Gordons",
+    link: "https://static.channelsight.com/gordonsireland/index.html",
   },
   6: {
     img: "/products/hop13-desktop.png",
     title: "Hop House 13",
+    link: "https://static.channelsight.com/hh13ireland/index.html",
   },
   7: {
     img: "/products/rockshore.png",
     title: "Rockshore",
+    link: "https://static.channelsight.com/rockshoreireland/index.html",
   },
   8: {
     img: "/products/smirnoff.png",
     title: "Smirnoff",
+    link: "https://static.channelsight.com/smirnoffireland/index.html",
   },
 };
 
@@ -332,6 +342,9 @@ $(document).ready(function () {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+a {
+  text-decoration: none;
+}
 .intro {
   max-width: 1200px;
   margin-left: auto;
@@ -353,20 +366,12 @@ $(document).ready(function () {
   font-size: 27px;
   min-height: 380px;
   max-height: 450px;
-  //   height: 500px;
-  //   max-height: 570px;
-  //   min-height: 470px;
   border-radius: 25px;
   margin-bottom: 25px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  //   background: rgb(2, 0, 36);
-  //   background: linear-gradient(
-  //     175deg,
-  //     rgba(2, 0, 36, 0) 0%,
-  //     rgba(231, 23, 36, 1) 70%
-  //   );
+  border: none;
   background-position-y: -10px;
   transition: 1s ease-in;
   background-color: transparent
@@ -395,14 +400,13 @@ $(document).ready(function () {
 .card-1,
 .card-3,
 .card-5,
-.project--8 {
+.card-7 {
   padding-right: 25px;
   padding-left: 0;
 }
 .card-2,
 .card-4,
-.card-6,
-.project--7 {
+.card-6 {
   padding-right: 0;
   padding-left: 0;
 }
@@ -440,11 +444,11 @@ $(document).ready(function () {
   font-weight: 500;
 }
 .click {
-  max-width: 40px;
+  max-width: 30px;
   margin-left: auto;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
   //   padding: 10;
   //   margin-top: 15px;
 }
@@ -487,8 +491,28 @@ $(document).ready(function () {
   }
   .click {
     max-width: 30px;
-    right: 10px;
-    top: 10px;
+    right: 12px;
+    top: 12px;
+  }
+}
+.click {
+  -webkit-animation: pulse 3s linear infinite;
+  animation: pulse 3s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 </style>

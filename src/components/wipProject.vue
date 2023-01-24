@@ -208,7 +208,6 @@ export default {
 };
 </script>
 <script setup>
-import dataModel from "../js/model.js";
 import gsap from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -382,9 +381,12 @@ $(document).ready(function () {
   }
 
   .product-wrapper {
-    @include flexbox();
-    @include align-items(flex-end);
-    @include justify-content(flex-start);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    // @include flexbox();
+    // @include align-items(flex-end);
+    // @include justify-content(flex-start);
     color: white;
     width: 70%;
     font-size: 30px;
@@ -504,7 +506,7 @@ $(document).ready(function () {
   //   }
 
   .slick-slider-dots {
-    @include flexbox();
+    display: flex;
 
     position: relative !important;
     bottom: 0px;
@@ -513,19 +515,19 @@ $(document).ready(function () {
     margin-left: 50px;
     margin-top: -50px;
     @media screen and(max-width: 650px) {
-      @include justify-content(flex-end);
+      justify-content: flex-end;
       bottom: -340px;
       .slick-dots {
         bottom: -27px !important;
       }
     }
     ul {
-      @include flexbox();
+      display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
       @media screen and(max-width: 650px) {
-        @include justify-content(flex-end);
+        justify-content: flex-end;
       }
 
       li {

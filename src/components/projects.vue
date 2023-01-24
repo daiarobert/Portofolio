@@ -10,7 +10,14 @@
         class="card"
         :style="`background-image: url('/products/project-${key}.jpg'); background-size:120%`"
       >
-        <div class="project-title" style="margin-top: 20px">
+        <div
+          class="project-title"
+          style="
+            margin-top: 20px;
+            font-family: termina, sans-serif;
+            text-transform: uppercase;
+          "
+        >
           {{ item.title }} <img class="click" src="/products/click-white.png" />
         </div>
         <img :src="`${item.img}`" :class="`project--${key}`" />
@@ -268,7 +275,6 @@ export default {
 };
 </script>
 <script setup>
-import dataModel from "../js/model.js";
 import gsap from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

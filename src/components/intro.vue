@@ -69,7 +69,6 @@ export default {
 };
 </script>
 <script setup>
-import dataModel from "../js/model.js";
 const props = defineProps({
   brandExperience: {
     type: String,

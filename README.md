@@ -1,11 +1,6 @@
-# Channelsight Environment Template
+# rob
 
-### Install Vue.js
-```
-npm install -g @vue/cli
-```
-
-### Project setup
+## Project setup
 ```
 npm install
 ```

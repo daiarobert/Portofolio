@@ -67,7 +67,6 @@ export default {
 };
 </script>
 <script setup>
-import dataModel from "../js/model.js";
 import gsap from "gsap";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

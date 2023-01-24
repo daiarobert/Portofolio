@@ -1,42 +1,17 @@
 <template>
   <div class="navbar">
-    <!-- <div class="d-flex align-items-center" style="font-weight: 500">
-      <div class="dot"></div>
-      rob
-    </div> -->
-    <!-- <nav class="nav-container">
-      <button
-        type="button"
-        class="navbar-toggler d-block d-md-none"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse d-none d-md-flex"
-        id="navbarNav"
-        style="font-weight: 500"
-      >
-        <li>
-          <a aria-current="page" style="color: #000" href="/">Home</a>
-        </li>
-        <li><a href="/#projects" style="color: gray">Projects</a></li>
-        <li>
-          <a href="/#contact" style="color: gray">Contact</a>
-        </li>
-      </div>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
       <div class="container-fluid">
         <div
           class="d-flex align-items-center"
-          style="font-weight: 500; color: white"
+          style="
+            font-weight: 500;
+            color: white;
+            font-family: termina, sans-serif;
+            text-transform: uppercase;
+          "
         >
-          <div class="dot"></div>
+          <div class="dot" style=""></div>
           rob
         </div>
         <button
@@ -65,7 +40,6 @@
         </div>
       </div>
     </nav>
-    <!-- <img class="navbar__img" :src="logoSrc" /> -->
   </div>
 </template>
 <script>
@@ -90,7 +64,6 @@ export default {
 };
 </script>
 <script setup>
-import dataModel from "../js/model.js";
 const props = defineProps({
   brandExperience: {
     type: String,
@@ -122,7 +95,6 @@ $(document).ready(function () {
   margin-right: auto;
   padding-left: 3em;
   padding-right: 3em;
-  margin-top: 17px;
   border-radius: 25px;
 }
 .navbar-nav {
@@ -130,6 +102,10 @@ $(document).ready(function () {
 }
 .nav-item {
   margin-right: 0 !important;
+}
+.nav-link {
+  font-family: termina, sans-serif;
+  text-transform: uppercase;
 }
 .dot {
   border-radius: 50%;

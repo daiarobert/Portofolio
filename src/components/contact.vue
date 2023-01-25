@@ -59,14 +59,12 @@ export default {
         y: 50,
       });
       gsap.to(".container-contact", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         y: 0,
         duration: 1,
         scrollTrigger: {
           trigger: ".container-contact", // what element the animation should start at
-          start: "70% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "70% bottom", // enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -177,12 +175,4 @@ a {
     padding-right: 1em;
   }
 }
-
-// .dot {
-//   border-radius: 50%;
-//   height: 15px;
-//   width: 15px;
-//   background-color: aqua;
-//   margin-right: 10px;
-// }
 </style>

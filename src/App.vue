@@ -5,11 +5,9 @@
   <projects />
   <wipProject />
   <contact />
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import logoBar from "./components/logoBar.vue";
 import intro from "./components/intro.vue";
 import projects from "./components/projects.vue";
@@ -23,10 +21,6 @@ import WipProject from "./components/wipProject.vue";
 export default {
   components: { contact, Intro, WipProject, projects, logoBar },
   name: "App",
-  // components: {
-  //   HelloWorld,
-  //   Projects,
-  // },
 };
 </script>
 

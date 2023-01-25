@@ -70,17 +70,7 @@ export default {
   data() {
     return {};
   },
-  methods: {
-    // logoBar: function (event) {
-    //   $(".navbar").css({
-    //     // backgroundColor: this.logoBg,
-    //   });
-    // },
-  },
-  //invoke on load
-  //   mounted() {
-  //     this.logoBar();
-  //   },
+  methods: {},
 };
 </script>
 <script setup>
@@ -125,8 +115,6 @@ $(document).ready(function () {
   );
   background-size: 250%;
   border: none;
-  //   padding-right: 20px;
-  //   margin-right: 10px;
 }
 .right {
   //width: 35%;

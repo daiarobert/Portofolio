@@ -27,7 +27,7 @@
 
           Login Authentication using protected routes and JWT token.<br />
         </div>
-        <div class="buttons--wrapper" style="margin-bottom: 20px">
+        <div class="buttons--wrapper d-flex" style="margin-bottom: 20px">
           <a href="https://codecubes.co.uk/" target="_blank"
             ><button
               type="button"
@@ -37,7 +37,7 @@
                 border: solid 1px;
                 padding: 10px;
                 border-radius: 25px;
-                margin-right: 10px;
+                min-width: 98px;
                 font-family: inconsolata, sans-serif;
               "
               :data-id="active"
@@ -46,6 +46,7 @@
               View Live
             </button>
           </a>
+          <div class="space" style="width: 10px"></div>
 
           <a href="https://github.com/daiarobert/atipic" target="_blank"
             ><button
@@ -54,6 +55,7 @@
               style="
                 border: solid 1px;
                 padding: 10px;
+                min-width: 98px;
                 border-radius: 25px;
                 font-family: inconsolata, sans-serif;
               "
@@ -173,34 +175,16 @@ export default {
         opacity: 0,
         y: 50,
       });
-      // gsap.set(".carousel__img--product[data-id='1']", {
-      //   opacity: 0,
-      //   y: 50,
-      // });
       gsap.to(".container-atipic", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         y: 0,
         duration: 1,
         scrollTrigger: {
           trigger: ".container-atipic", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", // enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
-      // gsap.to(".carousel__img--product[data-id='1']", {
-      //   // Animate .recipes__recipe
-      //   // properties to animate here
-      //   y: 0,
-      //   opacity: 1,
-      //   duration: 1,
-      //   scrollTrigger: {
-      //     trigger: ".container-atipic", // what element the animation should start at
-      //     start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
-      //     toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
-      //   },
-      // });
     },
   },
 
@@ -320,11 +304,9 @@ $(document).ready(function () {
   background-color: #006465;
 }
 .container-atipic {
-  //   flex-direction: column;
   justify-content: start;
   text-align: start;
   padding: 0;
-  //padding: 50px;
 }
 .title {
   font-size: 35px;
@@ -343,8 +325,8 @@ $(document).ready(function () {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-right-color: transparent;
-  width: 30px;
-  height: 35px;
+  min-width: 30px;
+  min-height: 35px;
   background: transparent;
   color: white;
 }
@@ -353,8 +335,8 @@ $(document).ready(function () {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   margin-left: -1px;
-  width: 30px;
-  height: 35px;
+  min-width: 30px;
+  min-height: 35px;
   background: transparent;
   color: white;
 }
@@ -370,190 +352,6 @@ $(document).ready(function () {
     border-bottom-left-radius: 25px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-  }
-}
-
-.component__carousel--1 {
-  // background-image: url("/public/hero/hero-1/test-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 0px -50px;
-  @media screen and(max-width: 650px) {
-    background-size: 160% 100% !important;
-    background-position: -55px 0px !important;
-  }
-  *:focus {
-    outline: 0 !important;
-  }
-
-  .product-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    // @include flexbox();
-    // @include align-items(flex-end);
-    // @include justify-content(flex-start);
-    color: white;
-    width: 70%;
-    font-size: 30px;
-    height: 100%;
-    margin-bottom: 20px;
-  }
-  .buttons--wrapper {
-    width: 70%;
-    text-align: left;
-    height: 100%;
-    font-size: 13px;
-    button {
-      padding: 15px;
-      border-top-left-radius: 100px;
-      border-bottom-left-radius: 100px;
-      border-top-right-radius: 100px;
-      border-bottom-right-radius: 100px;
-      min-width: 120px;
-      min-height: 47px;
-    }
-  }
-  .trigger-buttons {
-    position: relative;
-    z-index: 0;
-    width: 70%;
-    text-align: left;
-    height: 60%;
-  }
-
-  .trigger-buttons-mob {
-    width: 50%;
-    text-align: left;
-    display: none;
-  }
-
-  .carousel__button-code {
-    border: 1px solid white;
-    padding: 15px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    margin-left: 20px;
-  }
-
-  .carousel--wrapper {
-    height: 100%;
-    right: 0;
-    text-align: center;
-    z-index: 100;
-    padding: 40px;
-  }
-  .carousel__img--product {
-    max-width: 100%;
-  }
-  .carousel__button-live,
-  .carousel__button-code {
-    border: solid 1px;
-    padding: 10px;
-    border-radius: 25px;
-  }
-
-  @media screen and(max-width: 770px) {
-    .carousel__button-view,
-    .carousel__button-live {
-      font-size: 11px !important;
-      min-width: 90px !important;
-    }
-  }
-  .all-wrap {
-    @media screen and(max-width: 650px) {
-      .desktop {
-        display: none !important;
-      }
-      .carousel__img--product {
-        max-height: 450px;
-        max-width: 100%;
-      }
-      //   flex-direction: column !important;
-      padding: 0 !important;
-      background-size: 100% 510px !important;
-
-      .carousel__img--product {
-        max-height: 270px;
-        width: 100% !important;
-      }
-      .carousel--wrapper {
-        margin-right: -40px !important;
-        padding-bottom: 0 !important;
-      }
-      .product-wrapper {
-        width: 80% !important;
-        margin-top: 30px !important;
-        margin-bottom: 20px !important;
-      }
-      .buttons--wrapper {
-        width: 80% !important;
-      }
-      .trigger-buttons-mob {
-        display: block !important;
-        margin-left: 10%;
-        margin-top: -40px !important;
-      }
-    }
-  }
-
-  /////slick custom dots///////
-  //   .wrapper .slick-dots li button:before {
-  //     font-size: 50px;
-  //     color: #000000;
-  //   }
-  //   .slick-arrow:before {
-  //     color: #ffffff;
-  //   }
-  //   .slick-dots li button:before {
-  //     font-size: 0 !important;
-  //   }
-
-  .slick-slider-dots {
-    display: flex;
-
-    position: relative !important;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 50px;
-    margin-top: -50px;
-    @media screen and(max-width: 650px) {
-      justify-content: flex-end;
-      bottom: -340px;
-      .slick-dots {
-        bottom: -27px !important;
-      }
-    }
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      @media screen and(max-width: 650px) {
-        justify-content: flex-end;
-      }
-
-      li {
-        margin: 0 4px;
-        button {
-          background: white;
-          overflow: hidden;
-          color: white;
-
-          border: 1px solid black;
-          border-radius: 25px;
-        }
-        &.slick-active {
-          button {
-            background: black;
-            color: black;
-          }
-        }
-      }
-    }
   }
 }
 </style>

@@ -34,240 +34,156 @@ export default {
   },
   methods: {
     enterViewRecipe: function (event) {
-      gsap.set(".card-1", {
-        opacity: 0,
-      });
-      gsap.set(".card-2", {
-        opacity: 0,
-      });
-      gsap.set(".card-3", {
-        opacity: 0,
-      });
-      gsap.set(".card-4", {
-        opacity: 0,
-      });
-      gsap.set(".card-5", {
-        opacity: 0,
-      });
-      gsap.set(".card-6", {
-        opacity: 0,
-      });
-      gsap.set(".card-7", {
-        opacity: 0,
-      });
-      gsap.set(".card-8", {
-        opacity: 0,
-      });
+      gsap.set(
+        ".card-1, .card-2,.card-3,.card-4,.card-5,.card-6,.card-7,.card-8",
+        {
+          opacity: 0,
+        }
+      );
       gsap.to(".card-1", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-1", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--1", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-1", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-2", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-2", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--2", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-2", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-3", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-3", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--3", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-3", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-4", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-4", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--4", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-4", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-5", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-5", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--5", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-5", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-6", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-6", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--6", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-6", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-7", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-7", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--7", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-7", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".card-8", {
-        // Animate .recipes__recipe
-        // properties to animate here
         opacity: 1,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-8", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
       gsap.to(".project--8", {
-        // Animate .recipes__recipe
-        // properties to animate here
         top: 70,
         duration: 1,
         scrollTrigger: {
           trigger: ".card-8", // what element the animation should start at
-          start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
+          start: "100% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
-      //   gsap.to(".card-4", {
-      //     // Animate .recipes__recipe
-      //     // properties to animate here
-      //     opacity: 1,
-      //     duration: 1,
-      //     scrollTrigger: {
-      //       trigger: ".card-3", // what element the animation should start at
-      //       start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
-      //       toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
-      //     },
-      //   });
-      //   gsap.to(".project--4", {
-      //     // Animate .recipes__recipe
-      //     // properties to animate here
-      //     top: 70,
-      //     duration: 1,
-      //     scrollTrigger: {
-      //       trigger: ".card-3", // what element the animation should start at
-      //       start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
-      //       toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
-      //     },
-      //   });
-
-      //   gsap.from(".card-3", {
-      //     delay: 0.2,
-      //     duration: 1.5,
-      //     opacity: "0",
-      //     ease: "bounce",
-      //     scrollTrigger: {
-      //       trigger: ".card-3", // what element the animation should start at
-      //       start: "100% bottom", // 10% of .recipes__recipe[data-id='2'] enters the bottom of the viewport
-      //       toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
-      //     },
-      //   });
     },
   },
   //invoke on load
@@ -374,11 +290,6 @@ a {
   border: none;
   background-position-y: -10px;
   transition: 1s ease-in;
-  background-color: transparent
-    linear-gradient(0deg, #5e151e, #6f2422 5%, #9c4b2d 50%, #f3e6d3) 0 0
-    no-repeat padding-box;
-
-  //   margin-top: 10px;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -450,8 +361,6 @@ a {
   position: absolute;
   right: 15px;
   top: 15px;
-  //   padding: 10;
-  //   margin-top: 15px;
 }
 @media screen and(max-width: 1020px) {
   .project--2,

@@ -181,7 +181,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".container-atipic", // what element the animation should start at
-          start: "100% bottom", // enters the bottom of the viewport
+          start: "50% bottom", // enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });

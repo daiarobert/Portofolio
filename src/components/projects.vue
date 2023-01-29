@@ -45,7 +45,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-1", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -54,7 +54,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-1", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -63,7 +63,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-2", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -72,7 +72,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-2", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -81,7 +81,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-3", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -90,7 +90,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-3", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -99,7 +99,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-4", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -108,7 +108,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-4", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -117,7 +117,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-5", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -126,7 +126,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-5", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -135,7 +135,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-6", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -144,7 +144,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-6", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -153,7 +153,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-7", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -162,7 +162,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-7", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -171,7 +171,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-8", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -180,7 +180,7 @@ export default {
         duration: 1,
         scrollTrigger: {
           trigger: ".card-8", // what element the animation should start at
-          start: "50% bottom", //  enters the bottom of the viewport
+          start: "30% bottom", //  enters the bottom of the viewport
           toggleActions: "play none none reverse", //onEnter, onLeave, onEnterBack, and onLeaveBack
         },
       });
@@ -289,7 +289,7 @@ a {
   align-items: center;
   border: none;
   background-position-y: -10px;
-  transition: 1s ease-in;
+  transition: 0.2s ease-in;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -297,14 +297,12 @@ a {
   .project--4,
   .project--5,
   .project--8 {
-    transition: 0.5s ease-out;
     top: 70px;
   }
   .project--2,
   .project--3,
   .project--6,
   .project--7 {
-    transition: 1s ease-out;
     top: 70px;
   }
 }
@@ -374,7 +372,7 @@ a {
     .project--3,
     .project--6,
     .project--7 {
-      transition: 1s ease-out;
+      transition: 0s ease-out;
       top: 100px;
     }
   }

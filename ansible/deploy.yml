@@ -2,6 +2,11 @@
   hosts: deploy
   become: yes
   tasks:
+    - name: Update system packages
+      yum:
+        name: "*"
+        state: latest
+
     - name: Install Docker
       yum:
         name: docker
@@ -15,6 +20,12 @@
 
     - name: Add ec2-user to Docker group
       command: usermod -aG docker ec2-user
+
+    - name: Ensure Docker group permissions are applied
+      shell: newgrp docker
+      args:
+        executable: /bin/bash
+      changed_when: false
 
     - name: Pull latest Docker image
       command: docker pull daiarobert/vue-app:latest
@@ -32,3 +43,6 @@
       command: docker rm vue-app
       when: running_container.stdout != ""
       ignore_errors: yes
+
+    - name: Run new Vue.js container
+      command: docker run -d -p 8080:80 --name vue-app daiarobert/vue-app:latest

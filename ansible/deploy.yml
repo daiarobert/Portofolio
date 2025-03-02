@@ -21,11 +21,9 @@
     - name: Add ec2-user to Docker group
       command: usermod -aG docker ec2-user
 
-    - name: Ensure Docker group permissions are applied
-      shell: newgrp docker
-      args:
-        executable: /bin/bash
-      changed_when: false
+    - name: Restart SSH session to apply group changes
+      debug:
+        msg: "Please log out and log back in for Docker group changes to take effect."
 
     - name: Pull latest Docker image
       command: docker pull daiarobert/vue-app:latest

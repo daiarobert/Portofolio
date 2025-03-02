@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'docker:24.0.5'  // Specifică versiunea Docker pe care vrei să o folosești
+            args '-v /var/run/docker.sock:/var/run/docker.sock'  // Permite accesul la Docker de pe host
+        }
+    }
     environment {
         ANSIBLE_IP = credentials('ANSIBLE_IP')
         SSH_KEY_PATH = "/var/lib/jenkins/.ssh/jenkins-ansible-key"

@@ -17,7 +17,7 @@
       command: usermod -aG docker ec2-user
 
     - name: Pull latest Docker image
-      command: docker pull mydockerhub/vue-app:latest
+      command: docker pull daiarobert/vue-app:latest
 
     - name: Stop existing container
       command: docker stop vue-app || true
@@ -26,4 +26,4 @@
       command: docker rm vue-app || true
 
     - name: Run new Vue.js container
-      command: docker run -d -p 80:80 --name vue-app mydockerhub/vue-app:latest
+      command: docker run -d -p 80:80 --name vue-app daiarobert/vue-app:latest

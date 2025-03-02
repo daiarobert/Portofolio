@@ -44,3 +44,4 @@
 
     - name: Run new Vue.js container
       command: docker run -d -p 8080:80 --name vue-app daiarobert/vue-app:latest
+#

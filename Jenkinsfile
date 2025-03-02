@@ -1,6 +1,7 @@
 pipeline {
     agent any
     environment {
+        DOCKER_HOST = "unix:///var/run/docker.sock"
         ANSIBLE_IP = credentials('ANSIBLE_IP')
         SSH_KEY_PATH = "/var/lib/jenkins/.ssh/jenkins-ansible-key"
         GITHUB_RAW_PLAYBOOK = "https://raw.githubusercontent.com/daiarobert/Portofolio/main/ansible/deploy.yml"

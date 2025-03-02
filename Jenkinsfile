@@ -3,7 +3,7 @@ pipeline {
     environment {
         ANSIBLE_IP = credentials('ANSIBLE_IP')
         SSH_KEY_PATH = "/var/lib/jenkins/.ssh/jenkins-ansible-key"
-        GITHUB_RAW_URL = "https://raw.githubusercontent.com/daiarobert/Portofolio/main/deploy.yml"
+        GITHUB_RAW_URL = "https://raw.githubusercontent.com/daiarobert/Portofolio/main/ansible/deploy.yml"
     }
     stages {
         stage('Deploy via Ansible') {

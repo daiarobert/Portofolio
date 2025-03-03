@@ -21,9 +21,12 @@ jobs:
       - name: Push Docker image
         run: docker push daiarobert/vue-app:latest
 
+      # - name: Trigger Jenkins Deployment
+      #   run: |
+      #     curl -u "robert:${{ secrets.JENKINS_API_TOKEN }}" -X POST \
+      #     "http://${{ secrets.JENKINS_URL }}/job/deploy-django/build?token=${{ secrets.JENKINS_TRIGGER_TOKEN }}"
+
       - name: Trigger Jenkins Deployment
         run: |
-          curl -u "robert:${{ secrets.JENKINS_API_TOKEN }}" -X POST \
-          "http://${{ secrets.JENKINS_URL }}/job/deploy-django/build?token=${{ secrets.JENKINS_TRIGGER_TOKEN }}"
-
-#
+          curl -X POST "${{ secrets.JENKINS_URL }}/job/Deploy-pipeline/build" \
+          --user "${{ secrets.JENKINS_USERNAME }}:${{ secrets.JENKINS_API_TOKEN }}"

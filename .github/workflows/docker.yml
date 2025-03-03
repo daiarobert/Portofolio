@@ -25,3 +25,5 @@ jobs:
         run: |
           curl -u "robert:${{ secrets.JENKINS_API_TOKEN }}" -X POST \
           "http://${{ secrets.JENKINS_URL }}/job/deploy-django/build?token=${{ secrets.JENKINS_TRIGGER_TOKEN }}"
+
+#

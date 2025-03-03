@@ -23,5 +23,5 @@ jobs:
 
       - name: Trigger Jenkins Deployment
         run: |
-          curl -X POST "http://${{ secrets.JENKINS_URL }}/job/Deploy-pipeline/build" \
-          --user "${{ secrets.JENKINS_USERNAME }}:${{ secrets.JENKINS_API_TOKEN }}"
+          curl -u "robert:${{ secrets.JENKINS_API_TOKEN }}" -X POST \
+          "http://${{ secrets.JENKINS_URL }}/job/deploy-django/build?token=${{ secrets.JENKINS_API_TOKEN }}"

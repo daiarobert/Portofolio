@@ -18,7 +18,8 @@
           class="title"
           style="font-family: inconsolata, sans-serif; text-transform: none"
         >
-          a self-taught Frontend Developer.
+          A Frontend Developer building web applications and websites for
+          well-known brands.
         </div>
         <div
           class="introduction"
@@ -29,8 +30,9 @@
             margin-top: 25px;
           "
         >
-          I have a passion for technology, constantly learning and experimenting
-          with new technologies and design trends.
+          I specialize in developing robust and scalable web solutions,
+          leveraging modern technologies to create efficient and
+          high-performance applications.
         </div>
         <div class="contact-me" style="margin-top: auto">
           <a href="mailto: daiarobert2@gmail.com"

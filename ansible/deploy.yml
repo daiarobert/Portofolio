@@ -28,18 +28,18 @@
     - name: Pull latest Docker image
       command: docker pull daiarobert/vue-app:latest
 
-    - name: Check if container is running
-      shell: docker ps -q -f name=vue-app
-      register: running_container
+    - name: Check if container exists (running or stopped)
+      shell: docker ps -aq -f name=vue-app
+      register: existing_container
 
     - name: Stop existing container (if running)
       command: docker stop vue-app
-      when: running_container.stdout != ""
+      when: existing_container.stdout != ""
       ignore_errors: yes
 
     - name: Remove existing container (if exists)
       command: docker rm vue-app
-      when: running_container.stdout != ""
+      when: existing_container.stdout != ""
       ignore_errors: yes
 
     - name: Run new Vue.js container

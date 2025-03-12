@@ -8,3 +8,4 @@ ansible
 Jenkinsfile
 deploy.yml
 inventory.ini
+test

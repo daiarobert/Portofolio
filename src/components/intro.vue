@@ -18,7 +18,7 @@
           class="title"
           style="font-family: inconsolata, sans-serif; text-transform: none"
         >
-          A Frontend Developer building web applications and websites for
+          A DevOps Engineer building web applications and websites for
           well-known brands.
         </div>
         <div

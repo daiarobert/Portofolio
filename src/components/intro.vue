@@ -18,8 +18,8 @@
           class="title"
           style="font-family: inconsolata, sans-serif; text-transform: none"
         >
-          A DevOps Engineer building web applications and websites for
-          well-known brands.
+          A Web Developer building web applications and websites for well-known
+          brands.
         </div>
         <div
           class="introduction"
